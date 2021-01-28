@@ -3,7 +3,6 @@ sudo: false
 language: cpp
 
 addons:
-  ssh_known_hosts: git@github.com:google/googletest.git
   apt:
     sources:
       - ubuntu-toolchain-r-test
