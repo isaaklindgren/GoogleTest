@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/GoogleTest.dir/Frog.cpp.o"
   "CMakeFiles/GoogleTest.dir/main.cpp.o"
   "GoogleTest"
   "GoogleTest.pdb"

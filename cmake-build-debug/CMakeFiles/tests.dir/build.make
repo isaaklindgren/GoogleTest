@@ -77,31 +77,47 @@ include CMakeFiles/tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tests.dir/flags.make
 
-CMakeFiles/tests.dir/unit_tests.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/unit_tests.cpp.o: ../unit_tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/unit_tests.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/unit_tests.cpp.o -c /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/unit_tests.cpp
+CMakeFiles/tests.dir/Tests/Tests.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/Tests/Tests.cpp.o: ../Tests/Tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/Tests/Tests.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/Tests/Tests.cpp.o -c /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/Tests/Tests.cpp
 
-CMakeFiles/tests.dir/unit_tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/unit_tests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/unit_tests.cpp > CMakeFiles/tests.dir/unit_tests.cpp.i
+CMakeFiles/tests.dir/Tests/Tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/Tests/Tests.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/Tests/Tests.cpp > CMakeFiles/tests.dir/Tests/Tests.cpp.i
 
-CMakeFiles/tests.dir/unit_tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/unit_tests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/unit_tests.cpp -o CMakeFiles/tests.dir/unit_tests.cpp.s
+CMakeFiles/tests.dir/Tests/Tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/Tests/Tests.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/Tests/Tests.cpp -o CMakeFiles/tests.dir/Tests/Tests.cpp.s
+
+CMakeFiles/tests.dir/Frog.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/Frog.cpp.o: ../Frog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/Frog.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/Frog.cpp.o -c /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/Frog.cpp
+
+CMakeFiles/tests.dir/Frog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/Frog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/Frog.cpp > CMakeFiles/tests.dir/Frog.cpp.i
+
+CMakeFiles/tests.dir/Frog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/Frog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/Frog.cpp -o CMakeFiles/tests.dir/Frog.cpp.s
 
 # Object files for target tests
 tests_OBJECTS = \
-"CMakeFiles/tests.dir/unit_tests.cpp.o"
+"CMakeFiles/tests.dir/Tests/Tests.cpp.o" \
+"CMakeFiles/tests.dir/Frog.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
-tests: CMakeFiles/tests.dir/unit_tests.cpp.o
+tests: CMakeFiles/tests.dir/Tests/Tests.cpp.o
+tests: CMakeFiles/tests.dir/Frog.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: libgtest.a
+tests: libgmock.a
 tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

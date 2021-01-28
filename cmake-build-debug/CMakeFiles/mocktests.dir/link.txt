@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/mocktests.dir/Tests/MockTests.cpp.o  -o mocktests  libgtest.a -lpthread 

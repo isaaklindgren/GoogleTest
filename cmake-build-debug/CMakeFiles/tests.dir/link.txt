@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/tests.dir/unit_tests.cpp.o  -o tests  libgtest.a -lpthread 
+/usr/bin/c++  -g   CMakeFiles/tests.dir/Tests/Tests.cpp.o CMakeFiles/tests.dir/Frog.cpp.o  -o tests  libgtest.a -lpthread libgmock.a -lpthread 

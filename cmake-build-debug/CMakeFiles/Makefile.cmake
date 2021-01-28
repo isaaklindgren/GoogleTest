@@ -39,6 +39,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.5/CMakeSystem.cmake"
+  "../gmock.cmake"
   "../gtest.cmake"
   )
 
@@ -57,5 +58,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/gtest.dir/DependInfo.cmake"
   "CMakeFiles/GoogleTest.dir/DependInfo.cmake"
+  "CMakeFiles/gmock.dir/DependInfo.cmake"
   "CMakeFiles/tests.dir/DependInfo.cmake"
   )

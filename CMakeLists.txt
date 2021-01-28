@@ -1,16 +1,18 @@
 cmake_minimum_required(VERSION 3.9.2)
 project(GoogleTest)
 include(gtest.cmake)
+include(gmock.cmake)
 SET(COVERAGE OFF CACHE BOOL "Coverage")
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(GoogleTest main.cpp)
-add_executable(tests unit_tests.cpp)
 
-
+add_executable(GoogleTest main.cpp Frog.cpp Frog.h MockFrog.h)
+add_executable(tests Tests/Tests.cpp  Frog.cpp Frog.h MockFrog.h)
 find_package (Threads)
 target_link_libraries(tests PRIVATE gtest ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(tests PRIVATE gmock ${CMAKE_THREAD_LIBS_INIT})
+
 
 if (MSVC)
     target_compile_options(tests PRIVATE /std:c++17 /W4 /WX)

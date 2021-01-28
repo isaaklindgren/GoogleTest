@@ -75,6 +75,7 @@ CMAKE_BINARY_DIR = /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/c
 # The main recursive "all" target.
 all: CMakeFiles/gtest.dir/all
 all: CMakeFiles/GoogleTest.dir/all
+all: CMakeFiles/gmock.dir/all
 all: CMakeFiles/tests.dir/all
 
 .PHONY : all
@@ -87,6 +88,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/gtest.dir/clean
 clean: CMakeFiles/GoogleTest.dir/clean
+clean: CMakeFiles/gmock.dir/clean
 clean: CMakeFiles/tests.dir/clean
 
 .PHONY : clean
@@ -98,7 +100,7 @@ clean: CMakeFiles/tests.dir/clean
 CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=7,8,9 "Built target gtest"
 .PHONY : CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -125,12 +127,12 @@ CMakeFiles/gtest.dir/clean:
 CMakeFiles/GoogleTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoogleTest.dir/build.make CMakeFiles/GoogleTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoogleTest.dir/build.make CMakeFiles/GoogleTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target GoogleTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target GoogleTest"
 .PHONY : CMakeFiles/GoogleTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GoogleTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GoogleTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/GoogleTest.dir/rule
@@ -146,18 +148,46 @@ CMakeFiles/GoogleTest.dir/clean:
 .PHONY : CMakeFiles/GoogleTest.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/gmock.dir
+
+# All Build rule for target.
+CMakeFiles/gmock.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=4,5,6 "Built target gmock"
+.PHONY : CMakeFiles/gmock.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: CMakeFiles/gmock.dir/rule
+
+.PHONY : gmock
+
+# clean rule for target.
+CMakeFiles/gmock.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/clean
+.PHONY : CMakeFiles/gmock.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
+CMakeFiles/tests.dir/all: CMakeFiles/gmock.dir/all
 CMakeFiles/tests.dir/all: CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles --progress-num=10,11,12 "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule

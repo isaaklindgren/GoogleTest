@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/gtest/googletest -isystem /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/gtest/googletest/include 
+CXX_INCLUDES = -isystem /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/gtest/googletest -isystem /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/gtest/googletest/include -isystem /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/gtest/googlemock -isystem /home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/gtest/googlemock/include 
 

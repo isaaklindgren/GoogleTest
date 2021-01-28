@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/Frog.cpp" "/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles/GoogleTest.dir/Frog.cpp.o"
   "/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/main.cpp" "/home/isaaklindgren/Documents/Dev/Skola/Kandidat/GoogleTest/cmake-build-debug/CMakeFiles/GoogleTest.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -12,6 +13,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../gtest/googletest"
   "../gtest/googletest/include"
+  "../gtest/googlemock"
+  "../gtest/googlemock/include"
   )
 
 # Targets to which this target links.

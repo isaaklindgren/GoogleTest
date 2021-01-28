@@ -157,6 +157,19 @@ GoogleTest/fast:
 .PHONY : GoogleTest/fast
 
 #=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -168,6 +181,117 @@ tests: cmake_check_build_system
 tests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
+
+Frog.o: Frog.cpp.o
+
+.PHONY : Frog.o
+
+# target to build an object file
+Frog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoogleTest.dir/build.make CMakeFiles/GoogleTest.dir/Frog.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Frog.cpp.o
+.PHONY : Frog.cpp.o
+
+Frog.i: Frog.cpp.i
+
+.PHONY : Frog.i
+
+# target to preprocess a source file
+Frog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoogleTest.dir/build.make CMakeFiles/GoogleTest.dir/Frog.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Frog.cpp.i
+.PHONY : Frog.cpp.i
+
+Frog.s: Frog.cpp.s
+
+.PHONY : Frog.s
+
+# target to generate assembly for a file
+Frog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoogleTest.dir/build.make CMakeFiles/GoogleTest.dir/Frog.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Frog.cpp.s
+.PHONY : Frog.cpp.s
+
+Tests/Tests.o: Tests/Tests.cpp.o
+
+.PHONY : Tests/Tests.o
+
+# target to build an object file
+Tests/Tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Tests/Tests.cpp.o
+.PHONY : Tests/Tests.cpp.o
+
+Tests/Tests.i: Tests/Tests.cpp.i
+
+.PHONY : Tests/Tests.i
+
+# target to preprocess a source file
+Tests/Tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Tests/Tests.cpp.i
+.PHONY : Tests/Tests.cpp.i
+
+Tests/Tests.s: Tests/Tests.cpp.s
+
+.PHONY : Tests/Tests.s
+
+# target to generate assembly for a file
+Tests/Tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/Tests/Tests.cpp.s
+.PHONY : Tests/Tests.cpp.s
+
+gtest/googlemock/src/gmock-all.o: gtest/googlemock/src/gmock-all.cc.o
+
+.PHONY : gtest/googlemock/src/gmock-all.o
+
+# target to build an object file
+gtest/googlemock/src/gmock-all.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/gtest/googlemock/src/gmock-all.cc.o
+.PHONY : gtest/googlemock/src/gmock-all.cc.o
+
+gtest/googlemock/src/gmock-all.i: gtest/googlemock/src/gmock-all.cc.i
+
+.PHONY : gtest/googlemock/src/gmock-all.i
+
+# target to preprocess a source file
+gtest/googlemock/src/gmock-all.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/gtest/googlemock/src/gmock-all.cc.i
+.PHONY : gtest/googlemock/src/gmock-all.cc.i
+
+gtest/googlemock/src/gmock-all.s: gtest/googlemock/src/gmock-all.cc.s
+
+.PHONY : gtest/googlemock/src/gmock-all.s
+
+# target to generate assembly for a file
+gtest/googlemock/src/gmock-all.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/gtest/googlemock/src/gmock-all.cc.s
+.PHONY : gtest/googlemock/src/gmock-all.cc.s
+
+gtest/googlemock/src/gmock_main.o: gtest/googlemock/src/gmock_main.cc.o
+
+.PHONY : gtest/googlemock/src/gmock_main.o
+
+# target to build an object file
+gtest/googlemock/src/gmock_main.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/gtest/googlemock/src/gmock_main.cc.o
+.PHONY : gtest/googlemock/src/gmock_main.cc.o
+
+gtest/googlemock/src/gmock_main.i: gtest/googlemock/src/gmock_main.cc.i
+
+.PHONY : gtest/googlemock/src/gmock_main.i
+
+# target to preprocess a source file
+gtest/googlemock/src/gmock_main.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/gtest/googlemock/src/gmock_main.cc.i
+.PHONY : gtest/googlemock/src/gmock_main.cc.i
+
+gtest/googlemock/src/gmock_main.s: gtest/googlemock/src/gmock_main.cc.s
+
+.PHONY : gtest/googlemock/src/gmock_main.s
+
+# target to generate assembly for a file
+gtest/googlemock/src/gmock_main.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/gtest/googlemock/src/gmock_main.cc.s
+.PHONY : gtest/googlemock/src/gmock_main.cc.s
 
 gtest/googletest/src/gtest-all.o: gtest/googletest/src/gtest-all.cc.o
 
@@ -250,33 +374,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GoogleTest.dir/build.make CMakeFiles/GoogleTest.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-unit_tests.o: unit_tests.cpp.o
-
-.PHONY : unit_tests.o
-
-# target to build an object file
-unit_tests.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/unit_tests.cpp.o
-.PHONY : unit_tests.cpp.o
-
-unit_tests.i: unit_tests.cpp.i
-
-.PHONY : unit_tests.i
-
-# target to preprocess a source file
-unit_tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/unit_tests.cpp.i
-.PHONY : unit_tests.cpp.i
-
-unit_tests.s: unit_tests.cpp.s
-
-.PHONY : unit_tests.s
-
-# target to generate assembly for a file
-unit_tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/unit_tests.cpp.s
-.PHONY : unit_tests.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,8 +383,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GoogleTest"
+	@echo "... gmock"
 	@echo "... gtest"
 	@echo "... tests"
+	@echo "... Frog.o"
+	@echo "... Frog.i"
+	@echo "... Frog.s"
+	@echo "... Tests/Tests.o"
+	@echo "... Tests/Tests.i"
+	@echo "... Tests/Tests.s"
+	@echo "... gtest/googlemock/src/gmock-all.o"
+	@echo "... gtest/googlemock/src/gmock-all.i"
+	@echo "... gtest/googlemock/src/gmock-all.s"
+	@echo "... gtest/googlemock/src/gmock_main.o"
+	@echo "... gtest/googlemock/src/gmock_main.i"
+	@echo "... gtest/googlemock/src/gmock_main.s"
 	@echo "... gtest/googletest/src/gtest-all.o"
 	@echo "... gtest/googletest/src/gtest-all.i"
 	@echo "... gtest/googletest/src/gtest-all.s"
@@ -297,9 +407,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... unit_tests.o"
-	@echo "... unit_tests.i"
-	@echo "... unit_tests.s"
 .PHONY : help
 
 
