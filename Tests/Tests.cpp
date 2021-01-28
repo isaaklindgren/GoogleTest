@@ -6,7 +6,7 @@
 #include "../Frog.h"
 #include "../MockFrog.h"
 TEST(test, test) {
-    ASSERT_TRUE(1 == 1);
+    ASSERT_TRUE(1 == 2);
 }
 
 TEST(FrogSuite, TestOne) {
